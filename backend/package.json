@@ -4,10 +4,21 @@
   "type": "module",
   "private": true,
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/pg": "^8.20.3",
+    "drizzle-kit": "^1.0.0-rc.4",
+    "tsx": "^4.23.1"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "db:push":"drizzle-kit push",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
     "@fastify/cors": "^11.3.0",
@@ -17,8 +28,9 @@
     "@fastify/swagger-ui": "^6.1.1",
     "bullmq": "^6.0.5",
     "dotenv": "^17.4.2",
-    "drizzle-orm": "^0.45.2",
+    "drizzle-orm": "^1.0.0-rc.4",
     "fastify": "^5.11.0",
+    "pg": "^8.22.0",
     "pino": "^10.3.1",
     "postgres": "^3.4.9",
     "redis": "^6.2.0",
