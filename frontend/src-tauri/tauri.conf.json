@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "frontend",
+  "productName": "formcast",
   "version": "0.1.0",
   "identifier": "com.kishanranaghosh.formcast",
   "build": {
@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "frontend",
+        "title": "formcast",
         "width": 800,
         "height": 600
       }

@@ -1018,7 +1018,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "frontend"
+name = "formcast"
 version = "0.1.0"
 dependencies = [
  "serde",
